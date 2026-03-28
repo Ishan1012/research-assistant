@@ -81,7 +81,7 @@ export default function Research() {
                             <button
                                 onClick={() => handleProcess('suggest')}
                                 disabled={isLoading || currentWordCount === 0 || isOverLimit}
-                                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-300 disabled:pointer-events-none disabled:opacity-50 bg-white border border-slate-200 text-slate-700 shadow-sm hover:bg-slate-100 h-10 px-4 py-2"
+                                className="inline-flex items-center cursor-pointer justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-300 disabled:pointer-events-none disabled:opacity-50 bg-white border border-slate-200 text-slate-700 shadow-sm hover:bg-slate-100 h-10 px-4 py-2"
                             >
                                 {isLoading && activeOperation === 'suggest' ? (
                                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -94,7 +94,7 @@ export default function Research() {
                             <button
                                 onClick={() => handleProcess('summarize')}
                                 disabled={isLoading || currentWordCount === 0 || isOverLimit}
-                                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-700 disabled:pointer-events-none disabled:opacity-50 bg-cyan-700 text-white shadow hover:bg-cyan-800 h-10 px-6 py-2"
+                                className="inline-flex items-center cursor-pointer justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-700 disabled:pointer-events-none disabled:opacity-50 bg-cyan-700 text-white shadow hover:bg-cyan-800 h-10 px-6 py-2"
                             >
                                 {isLoading && activeOperation === 'summarize' ? (
                                     <>
