@@ -4,5 +4,6 @@ import lombok.Data;
 
 @Data
 public class ResearchRequest {
-    private String content, operation;
+    private String content;
+    private String operation;
 }

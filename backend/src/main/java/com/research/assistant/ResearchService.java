@@ -43,8 +43,8 @@ public class ResearchService {
     private String extractTextFromResponse(String response) {
         try {
             GeminiResponse geminiResponse = objectMapper.readValue(response, GeminiResponse.class);
-            if (geminiResponse.getCandidateList() != null && !geminiResponse.getCandidateList().isEmpty()) {
-                GeminiResponse.Candidate firstCandidate = geminiResponse.getCandidateList().get(0);
+            if (geminiResponse.getCandidates() != null && !geminiResponse.getCandidates().isEmpty()) {
+                GeminiResponse.Candidate firstCandidate = geminiResponse.getCandidates().get(0);
                 if (firstCandidate.getContent() != null &&
                         firstCandidate.getContent().getParts() != null &&
                         !firstCandidate.getContent().getParts().isEmpty()) {
