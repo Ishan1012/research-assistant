@@ -24,10 +24,10 @@ export default function Research() {
 
         const delayTimer = setTimeout(() => {
             setIsTakingLong(true);
-        }, 5000);
+        }, 10000);
 
         try {
-            const response = await fetch(`${process.env.VITE_API_BASE_URL || 'http://localhost:8081'}/api/research/process`, {
+            const response = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081'}/api/research/process`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
