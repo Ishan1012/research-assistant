@@ -101,7 +101,7 @@ To run the project in your local environment, follow these steps:
 
 ## 🎥 Video
 
-
+https://github.com/user-attachments/assets/204c5fca-0cad-49b2-9edd-dd9b46d4720a
 
 ## 📍 Preview
 
