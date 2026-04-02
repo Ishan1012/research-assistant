@@ -29,9 +29,7 @@ export default function Research() {
         }, 10000);
 
         try {
-            const healthResponse = await fetch(`${baseUrl}/api/research/health`);
-            console.log(healthResponse.ok ? "Backend is healthy." : "Backend health check failed. "+healthResponse.statusText());
-            const response = await fetch(`${baseUrl}/api/research/process`, {
+            const response = await fetch(`${baseUrl}/research/process`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
