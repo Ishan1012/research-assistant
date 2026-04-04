@@ -8,7 +8,7 @@ This Research Assistant is a minimal, AI-powered research assistant designed to 
 - `Gemini API`
 - `Vite`
 - `Java (Spring Boot)`
-- `TypeScript`
+- `Javascript`
 - `Tailwind CSS`
 
 ## 🎯 Features
